@@ -1,0 +1,14 @@
+{
+    "dataset_name": "MSD-Hippocampus",
+    "description": "394 3D Volumes (263 Training + 131 Testing)",
+    "segP": "/home/nute11a/dataset/MR/original/MSD-Hippocampus/Task04_Hippocampus/labelsTr/*.nii.gz",
+    "save_segP": "/home/nute11a/dataset/MR/original/MSD-Hippocampus/Task04_Hippocampus/labelsTr_png",
+    "save_imgP": "/home/nute11a/dataset/MR/original/MSD-Hippocampus/Task04_Hippocampus/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "AnteriorHippocampus",
+        "PosteriorHippocampus"
+    ],
+    "format_img": ".nii.gz",
+    "format_seg": ".nii.gz"
+}

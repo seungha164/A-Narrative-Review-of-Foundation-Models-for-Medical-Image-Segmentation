@@ -1,0 +1,12 @@
+{
+    "dataset_name": "RESECT(US)",
+    "description": "23 patients",
+    "segP": "../dataset/Ultrasound/RESECT(US)/data/labelsTr/*.nii.gz",
+    "save_segP": "../dataset/Ultrasound/RESECT(US)/data/labelsTr_png",
+    "save_imgP": "../dataset/Ultrasound/RESECT(US)/data/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "Tumour"
+    ],
+    "format": ".nii.gz"
+}

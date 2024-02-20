@@ -1,0 +1,32 @@
+{
+    "dataset_name": "SPIDER",
+    "description": "257 patients - lumbar spine MRI volume",
+    "segP": "../dataset/MR/SPIDER/labelsTr/*t2_SPACE.mha",
+    "save_segP": "../dataset/MR/SPIDER/labelsTr_png",
+    "save_imgP": "../dataset/MR/SPIDER/imagesTr_png",
+    "CLASSES_NAME": {
+        "0": "background",
+        "1": "vertebrae1",
+        "2": "vertebrae2",
+        "3": "vertebrae3",
+        "4": "vertebrae4",
+        "5": "vertebrae5",
+        "6": "vertebrae6",
+        "7": "vertebrae7",
+        "8": "vertebrae8",
+        "9": "vertebrae9",
+        "10": "vertebrae10",
+        "100": "SC",
+        "201": "IVD1",
+        "202": "IVD2",
+        "203": "IVD3",
+        "204": "IVD4",
+        "205": "IVD5",
+        "206": "IVD6",
+        "207": "IVD7",
+        "208": "IVD8",
+        "209": "IVD9",
+        "210": "IVD10"
+    },
+    "format": ".mha"
+}

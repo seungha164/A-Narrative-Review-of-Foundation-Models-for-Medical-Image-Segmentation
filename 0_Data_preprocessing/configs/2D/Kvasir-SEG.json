@@ -1,0 +1,12 @@
+{
+    "dataset_name": "Kvasir-SEG",
+    "description": "1000 pngs",
+    "segP": "./dataset/Endoscopy/Kvasir-SEG/masks/*.jpg",
+    "save_segP": "./dataset/Endoscopy/Kvasir-SEG/labelsTr",
+    "save_imgP": "./dataset/Endoscopy/Kvasir-SEG/imagesTr",
+    "CLASSES_NAME": [       
+        "background", 
+        "Polyp"
+    ],
+    "format": ".jpg"
+}

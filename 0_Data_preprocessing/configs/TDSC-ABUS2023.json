@@ -1,0 +1,12 @@
+{
+    "dataset_name": "TDSC-ABUS2023",
+    "description": "100 data",
+    "segP": "../dataset/Ultrasound/TDSC-ABUS2023/labelsTr/*.nrrd",
+    "save_segP": "../dataset/Ultrasound/TDSC-ABUS2023/labelsTr_png",
+    "save_imgP": "../dataset/Ultrasound/TDSC-ABUS2023/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "Tumor"
+    ],
+    "format": ".nrrd"
+}

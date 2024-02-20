@@ -1,0 +1,13 @@
+{
+    "dataset_name": "LOLA11",
+    "description": "55 scans",
+    "segP": "../dataset/CT/LOLA11/*.mha",
+    "save_segP": "../dataset/CT/MSD-Hepatic/Task08_HepaticVessel/labelsTr_png",
+    "save_imgP": "../dataset/CT/MSD-Hepatic/Task08_HepaticVessel/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "HepaticVessel", 
+        "HepaticTumor"
+    ],
+    "format": ".nii.gz"
+}

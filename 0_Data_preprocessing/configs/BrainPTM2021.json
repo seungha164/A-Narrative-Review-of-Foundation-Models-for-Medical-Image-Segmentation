@@ -1,0 +1,15 @@
+{
+    "dataset_name": "BrainPTM2021",
+    "description": "75 clinical cases with T1w Structural and Diffusion Weighted (DW) modalities ",
+    "imgP": "../dataset/MR/BrainPTM2021/original_data/*/T1.nii.gz",
+    "save_segP": "../dataset/MR/BrainPTM2021/labelsTr_png",
+    "save_imgP": "../dataset/MR/BrainPTM2021/imagesTr_png",
+    "CLASSES_NAME": {
+        "background"    : 0, 
+        "OR_left"       : 1,
+        "OR_right"      : 2,
+        "CST_left"      : 3,
+        "CST_right"     : 4
+    },
+    "format": ".nii.gz"
+}

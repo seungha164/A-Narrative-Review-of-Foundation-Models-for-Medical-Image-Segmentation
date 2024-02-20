@@ -1,0 +1,12 @@
+{
+    "dataset_name": "mitoEM",
+    "description": "1000 + 1040 pngs",
+    "segP": "./dataset/Microscopy/mitoEM/*/labelsTr/*.tif",
+    "save_segP": "./dataset/Microscopy/mitoEM/labelsTr",
+    "save_imgP": "./dataset/Microscopy/mitoEM/imagesTr",
+    "CLASSES_NAME": [       
+        "background", 
+        "Mitochondria"
+    ],
+    "format": ".tif"
+}

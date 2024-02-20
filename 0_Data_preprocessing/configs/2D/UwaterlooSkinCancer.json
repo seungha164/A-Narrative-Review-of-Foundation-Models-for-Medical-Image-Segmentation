@@ -1,0 +1,13 @@
+{
+    "dataset_name": "UwaterlooSkinCancer",
+    "description": "1000 pngs",
+    "segP": "Dermoscopy/original/UWaterlooSkinCancer/original/*/*/*/*_contour.png",
+    "save_segP": "Dermoscopy/original/UWaterlooSkinCancer/labelsTr_png",
+    "save_imgP": "Dermoscopy/original/UWaterlooSkinCancer/imagesTr_png",
+    "CLASSES_NAME": [       
+        "background", 
+        "Melanoma"
+    ],
+    "format_img": ".jpg",
+    "format_seg": ".png"
+}

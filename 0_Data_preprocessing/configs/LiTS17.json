@@ -1,0 +1,14 @@
+{
+    "dataset_name": "LiTS17",
+    "description": "200 CT Scans",
+    "segP": "/home/nute11a/dataset/CT/original/LiTS/data/labelsTr/*.nii",
+    "save_segP": "/home/nute11a/dataset/CT/original/LiTS/data/labelsTr_png",
+    "save_imgP": "/home/nute11a/dataset/CT/original/LiTS/data/imagesTr_png",
+    "CLASSES_NAME": [
+        "background",
+        "Liver", 
+        "Tumour"
+    ],
+    "format_seg": ".nii",
+    "format_img": ".nii"
+}

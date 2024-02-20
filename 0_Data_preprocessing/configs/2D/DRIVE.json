@@ -1,0 +1,13 @@
+{
+    "dataset_name": "mitoEM",
+    "description": "1000 + 1040 pngs",
+    "segP": "./dataset/OCT/original/DRIVE/data/*/*/*_manual1.gif",
+    "save_segP": "./dataset/OCT/original/DRIVE/labelsTr",
+    "save_imgP": "./dataset/OCT/original/DRIVE/imagesTr",
+    "CLASSES_NAME": [       
+        "background", 
+        "Vessel"
+    ],
+    "format_img": ".tif",
+    "format_seg": ".gif"
+}

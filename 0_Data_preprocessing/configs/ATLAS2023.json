@@ -1,0 +1,13 @@
+{
+    "dataset_name": "ATLAS2023",
+    "description": "60 patients",
+    "segP": "../dataset/MR/ATLAS2023/atlas-train-dataset-1.0.1/train/labelsTr/*.nii.gz",
+    "save_segP": "../dataset/MR/ATLAS2023/atlas-train-dataset-1.0.1/train/labelsTr_png",
+    "save_imgP": "../dataset/MR/ATLAS2023/atlas-train-dataset-1.0.1/train/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "HealthyLiver", 
+        "Tumour"
+    ],
+    "format": ".nii.gz"
+}

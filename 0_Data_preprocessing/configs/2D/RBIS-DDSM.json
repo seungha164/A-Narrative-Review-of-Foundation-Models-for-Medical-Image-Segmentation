@@ -1,0 +1,18 @@
+{
+    "dataset_name": "RBIS-DDSM",
+    "description": "",
+    "imgP": "./dataset/X-ray/original/RBIS-DDSM/images/*.png",
+    "segP" : "./dataset/X-ray/original/RBIS-DDSM/annotations",
+    "save_segP": "./dataset/X-ray/original/RBIS-DDSM/labelsTr_png",
+    "save_imgP": "./dataset/X-ray/original/RBIS-DDSM/imagesTr_png",
+    "CLASSES_NAME": [       
+        "background", 
+        "ben",
+        "suspicious",
+        "HGD",
+        "cancer",
+        "polyp"
+    ],
+    "format_img": ".jpg",
+    "format_seg": ".tif"
+}

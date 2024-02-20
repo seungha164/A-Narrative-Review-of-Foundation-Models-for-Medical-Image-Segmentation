@@ -1,0 +1,12 @@
+{
+    "dataset_name": "ToothFairy",
+    "description": "",
+    "segP": "./dataset/CT/ToothFairy/ToothFairy_Dataset/Dataset/*/gt_sparse.npy",
+    "save_segP": "./dataset/CT/ToothFairy/ToothFairy_Dataset/labelsTr_png",
+    "save_imgP": "./dataset/CT/ToothFairy/ToothFairy_Dataset/imagesTr_png",
+    "CLASSES_NAME": [
+        "background", 
+        "MandibularCana"
+    ],
+    "format": ".npy"
+}
