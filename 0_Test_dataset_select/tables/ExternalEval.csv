@@ -1,0 +1,59 @@
+Dataset Name,Modality,Body Part,Sub-region,Segmentation Targets,Dimension,Secure,Link
+SEG.A. 2023,CT,Abdomen,-,Aortic Vessel Tree,3D,O,https://multicenteraorta.grand-challenge.org/
+NSCLC Pleural Effusion(PleThora),CT,Thorax,Lung,"Lung, Pleural effusion",3D,O,https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=68551327
+3DLSC-COVID,CT,Thorax,Chest,"COVID-19, CAP",3D,O,https://ieee-dataport.org/documents/3dlsc-covid
+LOLA11,CT,Thorax,Lung,"Lung, Lobe",3D,O,https://lola11.grand-challenge.org/Home/
+LiTS17,CT,Abdomen,Liver,"Liver, Tumor",3D,O,https://competitions.codalab.org/competitions/17094
+InnerEarSeg,CT,Head and Neck,Ear,INNER EAR,3D,O,https://ieee-dataport.org/documents/ct-training-and-validation-series-3d-automated-segmentation-inner-ear-using-u-net
+ToothFairy,CT,Head and Neck,Mandible,Mandibular Cana,3D,O,https://ditto.ing.unimore.it/toothfairy/
+SegRap2023,CT,Head and Neck,-,"45 OARs and 2 GTVs: Brain, Brainstem, Chiasm, Cochlea left, Cochlea right, Esophagus, Eustachian tube left, Eustachian tube right, Eye left, Eye right, Hippocampus left, Hippocampus right, Internal auditory canal left, Internal auditory canal right, Larynx, Larynx glottic, Larynx supraglottic, Lens left, Lens right, Mandible left, Mandible right, Mastoid left, Mastoid right, Middle Ear left, Middle ear right, Optic nerve left, Optic nerve right, Oral cavity, Parotid left, Parotid right, Pharynx, Pituitary, Spinal cord, Submandibular left, Submandibular right, Temporal lobe left, Temporal lobe right, Thyroid, Temporomandibular joint left, Temporomandibular joint right, Trachea, Tympanic cavity left, Tympanic cavity right, Vestibular semicircular canal left, Vestibular semicircular canal right, Gross Target Volume of nasopharynx (GTVnx, also named GTVp), and Gross Target Volume of lymph node (GTVnd).?",3D,O,https://segrap2023.grand-challenge.org/
+VESsel12,CT,Thorax,Lung,Blood vessels,3D,O,https://vessel12.grand-challenge.org/
+HCC-TACE-Seg,CT,Abdomen,Liver," Liver, Tumor(HCC)",3D,O,https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=70230229
+FLARE23,CT,Abdomen,-,"Abdominal organs(Liver, Kidney(R), Spleen, Pancreas, Aorta, Inferior Vena Cava(IVC), Right Adrenal Gland(RAG), Left Adrenal Gland(LAB), Gallbladder, Exophagus), Tumor Stomach, Duodemum, Kidney(L))",3D,O,https://codalab.lisn.upsaclay.fr/competitions/12239#learn_the_details-dataset
+ULS2023,CT,Whole,-,Universal Lesion,3D,O,https://uls23.grand-challenge.org/datasets/
+MSD-Hepatic,CT,Abdomen,Hepatic,Hepatic tumor,3D,O,http://medicaldecathlon.com/
+QUBIQ2021,CT/MR,Pelvis,-,Prostate,3D,O,https://qubiq21.grand-challenge.org/
+CC-Tumor Heterogeneity,CT/MR/PET,Pelvis,Womb,Cervical cancer,3D,O,https://www.cancerimagingarchive.net/collection/cc-tumor-heterogeneity/
+AutoPET2023,CT/PET,Body,-,Whole-body tumor,3D,O,https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93258287
+Uwaterloo Skin Cancer,Dermoscopy,Body,-,Skin cancer,2D,O,https://uwaterloo.ca/vision-image-processing-lab/research-demos/skin-cancer-detection
+ONETOMANY_TOOLSYNSEG,Endoscopy,Abdomen,Intenstine,surgical instrument?,2D,O,https://ieee-dataport.org/documents/onetomanytoolsynseg
+EDD2020,Endoscopy,Abdomen,-,"Polyp, Cancer, HGD, Suspicious, NDBE",2D,O,https://ieee-dataport.org/competitions/endoscopy-disease-detection-and-segmentation-edd2020
+kvasir,Endoscopy,Abdomen,Intenstine,Polyp,2D,O,https://datasets.simula.no/kvasir/
+RAVIR,Fundus,Head and Neck,Eye,,2D,O,https://ravir.grand-challenge.org/
+PAPILA,Fundus,Head and Neck,Eye,Optic disc and cup,2D,O,https://figshare.com/articles/dataset/PAPILA/14798004/1
+IDRiD,Fundus,Head and Neck,Eye,Optic disc,2D,O,https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid
+TIGER,Histopathology,Body,-,"lymphocytes, plasma cells, invasive tumor",2D,O,https://tiger.grand-challenge.org/
+PathologyIMagesForGlandSeg,Histopathology,Body,-,Gland,2D,O,https://ieee-dataport.org/documents/pathological-images-gland-segmentation
+WSSS4LUAD,Histopathology,Thorax,Lung,tissue,2D,O,https://wsss4luad.grand-challenge.org/
+GlaS@MICCAI2015,Histopathology,Body,-,Adenocarcinomas,2D,O,https://github.com/twpkevin06222/Gland-Segmentation
+BCSS,Histopathology,Thorax,Breast,tissue,2D,O,https://bcsegmentation.grand-challenge.org/BCSS/
+MoNuSAC2020,Histopathology,Body,-,"cell-types(epithelial cells, lymphocytes, macrophages, neutrophils)",2D,O,https://monusac-2020.grand-challenge.org/Home/
+BrainPTM,MR,Head and Neck,Brain,White matter tracts,3D,O,https://brainptm-2021.grand-challenge.org/
+SPIDER,MR,,,"vertebrae, intervertebral discs (IVDs), spinal canal",3D,O,https://spider.grand-challenge.org/
+PASeg,MR,Head and Neck,Brain,PITUITARY ADENOMA,3D,O,https://ieee-dataport.org/documents/pituitary-adenoma-mri-segmentation-dataset
+crossMoDA 2021,MR,Head and Neck,Brain, Brain tumor,4D,O,https://zenodo.org/records/4662239
+Bonbid-Hie2023,MR,Head and Neck,Brain,HIE(Hypoxic Ischemic Encephalopathy),3D,O,https://bonbid-hie2023.grand-challenge.org/data/
+Shifts2022,MR,Head and Neck,Brain,White Matter Multiple Sclerosis (MS) lesion,3D,O,https://shifts.grand-challenge.org/
+MSD_Brain,MR,Head and Neck,Brain," Gliomas segmentation necrotic/active tumour, oedema",3D,O,http://medicaldecathlon.com/
+SMRA2021,MR,Thorax,Breast,Carotid Artery Vessel Wall ,3D,O,https://vessel-wall-segmentation.grand-challenge.org/Data/
+Med-DDPM,MR,Head and Neck,Brain,Brain Tumor,3D,O,https://ieee-dataport.org/documents/synthetic-whole-head-mri-brain-tumor-segmentation-dataset
+MSD_Hippocampus,MR,Head and Neck,Brain,Hippocampus head and body,3D,O,http://medicaldecathlon.com/
+MSD_Heart,MR,Thorax,Heart,Left Atrium,3D,O,http://medicaldecathlon.com/
+VALDo,MR,Body,-,,3D,O,https://valdo.grand-challenge.org/
+ATLAS2023,MR,Head and Neck,Brain,Brain stroke,3D,O,https://atlas-challenge.u-bourgogne.fr/
+CrossModa2022,MR,Head and Neck,Brain, Brain tumor,3D,O,https://crossmoda2022.grand-challenge.org/dataset/
+SegPC2021,Microscopy,Body,-,"Cytoplasm, Nucleus",2D,O,https://segpc-2021.grand-challenge.org/Dataset/
+ICIAR2018,Microscopy,Thorax,Breast,"normal, benign,?in situ?carcinoma and invasive carcinoma",2D,O,https://iciar2018-challenge.grand-challenge.org/Home/
+MitoEM,Microscopy,Body,-,Mitochondria Instance,3D,O,https://mitoem.grand-challenge.org/
+SEMI3D2013,Microscopy,,,neurites,3D,O,https://snemi3d.grand-challenge.org/
+BGUSIM,Microscopy,Body,-,Cell,2D/3D,O,https://ieee-dataport.org/documents/bgusim
+DRIVE,OCT,Head and Neck,Eye,Vessel,2D,O,https://drive.grand-challenge.org/
+DRAC2022,OCT,Head and Neck,Eye,Diabetic Retinopathy Lesions.,2D,O,https://drac22.grand-challenge.org/Description/
+MouseEmbryoSeg,Ultrasound,Pelvis,Womb,Mouse Embryo,3D,O,https://ieee-dataport.org/open-access/ultrasound-mouse-embryo-segmentation-and-classification
+TDSC-ABUS 2023,Ultrasound,Thorax,Breast,Breast Tumor,3D,O,https://tdsc-abus2023.grand-challenge.org/
+Curious2022,Ultrasound,Head and Neck,Brain,"Brain tumor, Resection cavity",2D,O,https://curious2022.grand-challenge.org/data/
+COVID-19 Radiography,X-ray,Thorax,Lung,"Lung, COVID-19 infection, lung opacity, viral pneumonia",2D,O,https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+RBIS-DDSM,X-ray,Thorax,Breast,Breast Cancer,2D,O,https://ieee-dataport.org/documents/re-curated-breast-imaging-subset-ddsm-dataset-rbis-ddsm
+ARCADE,X-ray,Thorax,Breast,Coronary Artery Disease,2D,O,https://arcade.grand-challenge.org/
+BSISeg,X-ray,Pelvis,-,bone,2D,O,https://ieee-dataport.org/documents/bone-scan-image-semantic-segmentation
+3DTeethSeg22,X-ray,Head and Neck,Mandible,Tooth,3D,O,https://3dteethseg.grand-challenge.org/

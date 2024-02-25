@@ -1,0 +1,21 @@
+{
+    "dataset_name": "HCC-TACE-Seg",
+    "description": "",
+    "caseRoot" : "/home/nute11a/nfs_server/dataset/original/CT/HCC-TACE-Seg/HCC-TACE-Seg/derived/nifti/*", 
+    "save_segP": "/home/nute11a/nfs_server/dataset/original/CT/HCC-TACE-Seg/labelsTr_png",
+    "save_imgP": "/home/nute11a/nfs_server/dataset/original/CT/HCC-TACE-Seg/imagesTr_png",
+    "CLASSES_NAME": {
+        "1" : "Liver",
+        "2" : "Abdominal-Aorta",
+        "3" : "Protal-vein-with-branches",
+        "4" : "Liver-Tumor"
+    },
+    "CLASSES_NAME_reverse": {
+        "Liver" : "1",
+        "Abdominal_aorta" : "2",
+        "Portal_vein" : "3",
+        "Mass" : "4"
+    },
+    "format_seg": ".nii.gz",
+    "format_img": ".nii.gz"
+}

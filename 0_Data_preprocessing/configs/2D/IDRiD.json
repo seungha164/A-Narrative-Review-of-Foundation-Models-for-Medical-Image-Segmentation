@@ -1,0 +1,18 @@
+{
+    "dataset_name": "IDRiD",
+    "description": "",
+    "imgP": "original/Fundus/IDRiD/A. Segmentation/1. Original Images/*/*.jpg",
+    "segP" : "original/Fundus/IDRiD/A. Segmentation/2. All Segmentation Groundtruths/*/*",
+    "save_segP": "original/Fundus/IDRiD/labelsTr_png",
+    "save_imgP": "original/Fundus/IDRiD/imagesTr_png",
+    "CLASSES_NAME": [  
+        "background",     
+        "Microaneurysms", 
+        "Haemorrhages",
+        "HardExudates",
+        "SoftExudates",
+        "OpticDisc"
+    ],
+    "format_img": ".jpg",
+    "format_seg": ".tif"
+}

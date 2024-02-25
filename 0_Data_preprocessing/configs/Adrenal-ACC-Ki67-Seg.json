@@ -1,0 +1,15 @@
+{
+    "dataset_name": "Adrenal-ACC-Ki67-Seg",
+    "description": "",
+    "caseRoot" : "/home/nute11a/nfs_server/dataset/original/CT/Adrenal-ACC-Ki67-Seg/derived/nifti/*", 
+    "save_segP": "/home/nute11a/nfs_server/dataset/original/CT/Adrenal-ACC-Ki67-Seg/labelsTr_png",
+    "save_imgP": "/home/nute11a/nfs_server/dataset/original/CT/Adrenal-ACC-Ki67-Seg/imagesTr_png",
+    "CLASSES_NAME": {
+        "1" : "Adrenocortical-Carcinoma"
+    },
+    "CLASSES_NAME_reverse": {
+        "Mass" : "1"
+    },
+    "format_seg": ".nii.gz",
+    "format_img": ".nii.gz"
+}

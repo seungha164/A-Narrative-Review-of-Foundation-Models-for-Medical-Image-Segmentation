@@ -39,7 +39,13 @@ def getImageFiles(segfiles, ds):
         return [seg.replace('_contour.png', '_orig.jpg') for seg in segfiles]
     if ds == 'ONETOMANY_TOOLSYNSEG':
         return [seg.replace('/annotations/binary/', '/images/') for seg in segfiles]
-
+    if ds == 'GlaS@MICCAI2015':
+        return [seg.replace('_anno.bmp', '.bmp') for seg in segfiles]
+    if ds == 'PathologyIMagesForGlandSeg':
+        return [seg.replace('/labels/', '/images/') for seg in segfiles]
+    if ds == 'BCSS':
+        return [seg.replace('/masks/', '/rgbs_colorNormalized_1/') for seg in segfiles]
+    
 def main(dsroot, config_file):
     #* (1) read data config file
     with open(config_file, 'rb') as f:
@@ -69,17 +75,19 @@ def main(dsroot, config_file):
         h, w = mask.shape
         if not cutils.checkRatio(mask, h, w):   continue
         #* mask 처리
-        is_save_img = save_2D_Mask(mask, f'{dsroot}/{cfg["save_segP"]}', patientName, h, w, 1, cfg["CLASSES_NAME"][1])
+        clss = np.unique(mask)
+        for cls in clss:
+            is_save_img = save_2D_Mask(mask, f'{dsroot}/{cfg["save_segP"]}', patientName, h, w, cls, cfg["CLASSES_NAME"][cls])
         #* image 처리
         if is_save_img:
             cv2.imwrite(f'{dsroot}/{cfg["save_imgP"]}/{patientName}.png', imgdata)
 
 if __name__ == "__main__":
-    root = '/home/nute11a/dataset'
-    config2d_p = '/home/nute11a/workspace/0_Data_preprocessing/configs'
+    root = '/home/nute11a/nfs_server/dataset'
+    config2d_p = '/home/nute11a/workspace/SAMM/0_Data_preprocessing/configs'
     main(
         dsroot = root,
         #config_file = './configs/2D/EDD2020.json'
-        config_file  = f'{config2d_p}/2D/ONETOMANY_TOOLSYNSEG.json'
+        config_file  = f'{config2d_p}/2D/BCSS.json' 
         #config_file  = './configs/2D/COVID-19 Radiography.json'
     )

@@ -15,22 +15,34 @@ def mapping_image_per_labelfiles(imgs, cfg):
         for img in imgs:
             name = img.split('/')[-1].replace('.jpg', '')
             dic[img] = glob(f"{cfg['segP']}/{name}*")
-        return dic
     if cfg['dataset_name'] == 'ICIAR2018':
         for img in imgs:
             name = img.split('/')[-1].replace('.png', '').replace('_thumb', '')
             dic[img] = glob(f"{cfg['segP']}/{name}*")
-        return dic
     if cfg['dataset_name'] == 'BSISeg':
         for img in imgs:
            # name = img.split('/')[-1].replace('.png', '').replace('_thumb', '')        
             dic[img] = sorted(glob(f"{img.replace('/image/', '/real_segmentation/').replace('.png', '_*')}"))
-        return dic
     if cfg['dataset_name'] == 'PAPILA':
         for img in imgs:
            # name = img.split('/')[-1].replace('.png', '').replace('_thumb', '')        
             dic[img] = sorted(glob(f"{img.replace('/FundusImages/', '/ExpertsSegmentations/Contours_png/').replace('.jpg', '_*')}"))
-        return dic
+    if cfg['dataset_name'] == 'BCSS':
+        for img in imgs:
+           # name = img.split('/')[-1].replace('.png', '').replace('_thumb', '')        
+            dic[img] = sorted(glob(f"{img.replace('/rgbs_colorNormalized_1/', '/masks/')}"))
+    if cfg['dataset_name'] == 'WSSS4LUAD':
+        for img in imgs:
+            dic[img] = sorted(glob(f"{img.replace('/img/', '/mask_split/').replace('.png', '*')}"))
+    if cfg['dataset_name'] == 'IDRiD':
+        for img in imgs:
+            case = img.split('/')[-1].replace('.jpg', '')
+            dic[img] = sorted(glob(f"{cfg['segP']}/{case}*"))
+    if cfg['dataset_name'] == 'RAVIR':
+        for img in imgs:
+            case = img.split('/')[-1].replace('.png', '')
+            dic[img] = sorted(glob(f"{cfg['segP']}/{case}*"))
+    return dic
 
 def save_2D_Mask(mask, saveMaskRoot, saveMaskPatient, h, w, clsNum, clsName):
     is_save_img =False
@@ -70,18 +82,21 @@ def main(dsroot, config_file):
     for idx in tqdm(range(len(filesImg))):
         imgName = filesImg[idx]
         patientName = imgName.split('/')[-1].replace(cfg["format_img"], '').replace('_', '-')
+        if cfg['dataset_name'] == 'WSSS4LUAD':
+            patientName = imgName.split('/')[-3] + '-' + patientName
         filesSeg = img_per_segfiles[imgName]
         if len(filesSeg) < 1:
             continue
         #* 파일 읽기 
         _, imgdata = rutils.read_by_format(imgName, cfg["format_img"])
-        for idx_label, segLabels in enumerate(filesSeg):
+        for idx_label, segLabels in enumerate(filesSeg):    #! 각 class 파일별 추출
             #* 파일 읽기
             _, segdata = rutils.read_by_format(segLabels, cfg["format_seg"])
             if imgdata.shape != segdata.shape:
                print('NOT SUIT : ', segLabels)
                break 
-            mask = segdata[:, :, 0]
+            
+            mask = np.max(segdata, axis=2)  #segdata[:, :, 0]
             h, w = mask.shape
             if not cutils.checkRatio(mask, h, w):   continue
             #* mask 처리
@@ -94,12 +109,13 @@ def main(dsroot, config_file):
 
 
 if __name__ == "__main__":
-    root = '/home/nute11a/dataset'
-    config2d_p = '/home/nute11a/workspace/0_Data_preprocessing/configs'
+    root = '/home/nute11a/nfs_server/dataset'
+    config2d_p = '/home/nute11a/workspace/SAMM/0_Data_preprocessing/configs'
     
     main(
-        dsroot = root,
-        config_file = f'{config2d_p}/2D/PAPILA.json'
+        dsroot = root, 
+        config_file = f'{config2d_p}/2D/RAVIR.json'
+        #config_file = f'{config2d_p}/2D/IDRiD.json'
         #config_file = './configs/2D/EDD2020.json'
         #config_file  = f'{config2d_p}/2D/ICIAR2018.json'
         #config_file  = f'{config2d_p}/2D/BSISeg.json'

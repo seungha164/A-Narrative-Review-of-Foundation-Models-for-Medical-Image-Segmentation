@@ -1,0 +1,13 @@
+{
+    "dataset_name": "GlaS@MICCAI2015",
+    "description": "",
+    "segP": "original/Histopathology/GlaS@MICCAI2015/imgs_and_masks/*_anno.bmp",
+    "save_segP": "original/Histopathology/GlaS@MICCAI2015/labelsTr_png",
+    "save_imgP": "original/Histopathology/GlaS@MICCAI2015/imagesTr_png",
+    "CLASSES_NAME": [       
+        "background", 
+        "Adenocarcinomas"
+    ],
+    "format_img": ".bmp",
+    "format_seg": ".bmp"
+}

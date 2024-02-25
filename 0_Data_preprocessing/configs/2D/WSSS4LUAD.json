@@ -1,0 +1,16 @@
+{
+    "dataset_name": "WSSS4LUAD",
+    "description": "",
+    "imgP": "original/Histopathology/WSSS4LUAD/*/img/*.png",
+    "segP" : "original/Histopathology/WSSS4LUAD/masks",
+    "save_segP": "original/Histopathology/WSSS4LUAD/labelsTr_png",
+    "save_imgP": "original/Histopathology/WSSS4LUAD/imagesTr_png",
+    "CLASSES_NAME": [       
+        "background", 
+        "Tumor",
+        "Stroma",
+        "Normal"
+    ],
+    "format_img": ".png",
+    "format_seg": ".png"
+}

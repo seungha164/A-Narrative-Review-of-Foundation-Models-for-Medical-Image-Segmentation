@@ -36,7 +36,7 @@ def read_by_format(file, format='png'):
     elif format in ['.mha', '.mhd']:
         return read_mh(file)
     # 2D
-    elif format in ['.png', '.tif', '.jpg']:
+    elif format in ['.png', '.tif', '.jpg', '.bmp']:
         return read_2d(file)
     elif format in ['.gif']:
         return read_frames(file)
