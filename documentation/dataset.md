@@ -217,7 +217,7 @@ This diverse and carefully selected dataset suite enables a robust and realistic
       <td>104</td>
     </tr>
     <tr>
-      <td><a href="TBAD	https://www.kaggle.com/datasets/xiaoweixumedicalai/imagetbad">ImageTBAD</a></td>
+      <td><a href="https://www.kaggle.com/datasets/xiaoweixumedicalai/imagetbad">ImageTBAD</a></td>
       <td>3D</td>
       <td>CT</td>
       <td>Aorta</td>
