@@ -1,5 +1,5 @@
 # A Narrative Review of Foundation Models for Medical Image Segmentation: Zero-Shot Performance Evaluation on Diverse Modalities
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This repository was constructed based on paper: [A Narrative Review of Foundation Models for Medical Image Segmentation: Zero-Shot Performance Evaluation on Diverse Modalities]()
 ## Citation
@@ -13,7 +13,7 @@ If you find our work useful in your research, please consider citing:
   note={Accepted, in press}
 }
 ```
-🔔 Note: The citation will be updated with volume, page numbers, and DOI after official publication.
+🚧 Note: The citation will be updated with volume, page numbers, and DOI after official publication.
 
 ## Overview
 This repository accompanies our narrative review paper on foundation models for medical image segmentation. Foundation models—large-scale, pre-trained deep learning models capable of adapting to diverse tasks—have shown remarkable contextual understanding and generalization in medical imaging. In our study, we systematically reviewed 63 studies and evaluated the zero-shot performance of six foundation models on 32 unseen medical image datasets from sources like The Cancer Imaging Archive, Kaggle, Zenodo, IEEE DataPort, and Grand Challenge.
@@ -662,3 +662,7 @@ Performance evaluation of foundation models on 2D and 3D datasets. DSC scores ev
   </tbody>
 </table>
 
+## License
+This repository is licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
+You are free to share and adapt the materials with proper attribution.  
+**Note**: All external datasets and referenced papers retain their original licenses.
